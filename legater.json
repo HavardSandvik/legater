@@ -56,6 +56,17 @@
       "lenke": "https://www.akerscholarship.no/"
     },
     {
+      "id": "chevening",
+      "navn": "Chevening Scholarship",
+      "giver": "Den britiske regjeringen (FCDO)",
+      "belop": "Fullfinansiert: skolepenger, månedlig stipend, reise",
+      "beskrivelse": "Ettårig master i UK for norske statsborgere. Krever minst to års arbeidserfaring (2 800 timer) etter bachelor, søknad til tre kurs og retur til Norge i minst to år etterpå. Søknad åpner i august.",
+      "frist": { "mnd": 10, "dag": 6 },
+      "fristTekst": "Tidlig oktober (6. okt i 2026)",
+      "niva": ["master"], "fag": ["alle"], "sted": ["uk"], "type": ["offentlig"],
+      "lenke": "https://www.chevening.org/scholarship/norway/"
+    },
+    {
       "id": "fulbright",
       "navn": "Fulbright studentstipend",
       "giver": "U.S.-Norway Fulbright Foundation",
