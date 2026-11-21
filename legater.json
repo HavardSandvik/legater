@@ -1,11 +1,15 @@
 {
   "sistOppdatert": "2026-11-21",
   "kategorier": {
-    "niva": { "navn": "Nivå", "verdier": { "vgs": "Videregående", "fhs": "Folkehøgskole", "bachelor": "Bachelor", "master": "Master / PhD" } },
-    "fag": { "navn": "Fag", "verdier": { "alle": "Alle fag", "realfag": "Realfag / teknologi", "medisin": "Medisin / helse", "musikk": "Musikk", "hav": "Hav / marin", "okonomi": "Økonomi / ledelse" } },
-    "sted": { "navn": "Studiested", "verdier": { "norge": "Norge", "uk": "Storbritannia", "usa": "USA", "utland": "Utlandet (flere land)", "utveksling": "Utveksling" } },
-    "type": { "navn": "Type", "verdier": { "offentlig": "Offentlig ordning", "privat": "Privat legat / stiftelse", "laerested": "Via lærestedet", "behov": "Behovsprøvd" } }
+    "niva": { "navn": "Nivå", "verdier": { "fhs": "Folkehøgskole", "bachelor": "Bachelor", "master": "Master / PhD" } },
+    "fag": { "navn": "Fag", "verdier": { "alle": "Alle fag", "realfag": "Realfag / teknologi", "medisin": "Medisin / helse", "musikk": "Musikk" } },
+    "sted": { "navn": "Studiested", "verdier": { "norge": "Norge", "uk": "Storbritannia", "usa": "USA", "utland": "Utlandet (flere land)" } },
+    "type": { "navn": "Type", "verdier": { "offentlig": "Offentlig ordning", "privat": "Privat legat / stiftelse" } }
   },
+  "profiler": [
+    { "id": "a", "navn": "Bachelor i UK – realfag", "filtre": { "niva": ["bachelor", "master"], "fag": ["realfag"], "sted": ["uk", "usa", "utland"] } },
+    { "id": "b", "navn": "Folkehøgskole, så medisin/realfag i UK", "filtre": { "niva": ["fhs", "bachelor"], "fag": ["musikk", "medisin", "realfag"], "sted": ["norge", "uk"] } }
+  ],
   "legater": [
     {
       "id": "lanekassen-utvidet",
@@ -48,7 +52,7 @@
       "beskrivelse": "Master eller PhD ved Caltech, MIT, Harvard, Stanford, UPenn, Oxford, Cambridge, Imperial eller NUS. Alle fag. Søk året før oppstart; portalen åpner 1. juni.",
       "frist": { "mnd": 9, "dag": 12 },
       "fristTekst": "Midt i september (12. sept i 2026)",
-      "niva": ["master"], "fag": ["alle", "realfag", "medisin", "okonomi"], "sted": ["uk", "usa", "utland"], "type": ["privat"],
+      "niva": ["master"], "fag": ["alle", "realfag", "medisin"], "sted": ["uk", "usa", "utland"], "type": ["privat"],
       "lenke": "https://www.akerscholarship.no/"
     },
     {
@@ -70,41 +74,8 @@
       "beskrivelse": "Master eller PhD (også utveksling) i USA. Krever fullført bachelor før oppstart. Inntil 35 stipend per år; svar innen juni.",
       "frist": null,
       "fristTekst": "Søknadsrunde om høsten – sjekk dato",
-      "niva": ["master"], "fag": ["alle"], "sted": ["usa", "utveksling"], "type": ["privat"],
+      "niva": ["master"], "fag": ["alle"], "sted": ["usa"], "type": ["privat"],
       "lenke": "https://www.noram.no/master-og-phd-i-usa"
-    },
-    {
-      "id": "noram-bachelor",
-      "navn": "NORAM bachelor i USA",
-      "giver": "Norge-Amerika Foreningen / partnerskoler",
-      "belop": "Skolestipend fra partneruniversitetene",
-      "beskrivelse": "Partnerskoler gir stipend til norske studenter; ved de fleste vurderes du automatisk når du søker opptak via NORAM.",
-      "frist": null,
-      "fristTekst": "Følger skolenes opptaksfrister",
-      "niva": ["bachelor"], "fag": ["alle"], "sted": ["usa"], "type": ["privat", "laerested"],
-      "lenke": "https://www.noram.no/bachelor-i-usa"
-    },
-    {
-      "id": "smedvig",
-      "navn": "Peder Smedvigs Stipendiefond",
-      "giver": "Forvaltes via CMS Kluge",
-      "belop": "Inntil 100 000 kr (ca. seks i året)",
-      "beskrivelse": "Videreutdanning i utlandet etter fullført universitetsgrad, fortrinnsvis innen økonomiledelse.",
-      "frist": null,
-      "fristTekst": "Årlig – sjekk dato",
-      "niva": ["master"], "fag": ["okonomi"], "sted": ["utland", "uk", "usa"], "type": ["privat"],
-      "lenke": "https://cms.law/no/nor/jobbmuligheter/jobb-for-cms-kluge/studenttilbud/peder-smedvigs-stipendiefond"
-    },
-    {
-      "id": "anglo-norse-rcm",
-      "navn": "Anglo-Norse Scholarship – Royal College of Music",
-      "giver": "The Anglo-Norse Society",
-      "belop": "£3 000 (ett år)",
-      "beskrivelse": "For en norsk student som tar postgraduate ved Royal College of Music i London. Ordningen løper til 2028–29.",
-      "frist": null,
-      "fristTekst": "Via RCM – sjekk dato",
-      "niva": ["master"], "fag": ["musikk"], "sted": ["uk"], "type": ["privat", "laerested"],
-      "lenke": "https://www.anglo-norse.org.uk/"
     },
     {
       "id": "tono-unge",
@@ -114,96 +85,8 @@
       "beskrivelse": "For unge låtskrivere og komponister. I 2026 måtte du være født 2003–2009. Vurderes på egen skapende aktivitet.",
       "frist": { "mnd": 4, "dag": 15 },
       "fristTekst": "Søknadsperiode mars – 15. april",
-      "niva": ["vgs", "fhs", "bachelor"], "fag": ["musikk"], "sted": ["norge"], "type": ["privat"],
+      "niva": ["fhs", "bachelor"], "fag": ["musikk"], "sted": ["norge"], "type": ["privat"],
       "lenke": "https://www.tono.no/"
-    },
-    {
-      "id": "yamaha",
-      "navn": "Yamaha Music Scholarship",
-      "giver": "Yamaha Music Europe",
-      "belop": "Ca. €2 000 per stipend",
-      "beskrivelse": "For heltids musikkstudenter. Instrumentet roterer hvert år (2025/26: tverrfløyte), så sjekk om det passer i år.",
-      "frist": null,
-      "fristTekst": "Årlig – sjekk instrument og frist",
-      "niva": ["bachelor", "master"], "fag": ["musikk"], "sted": ["norge", "utland"], "type": ["privat"],
-      "lenke": "https://no.yamaha.com/"
-    },
-    {
-      "id": "polyfon",
-      "navn": "Polyfon sommerstipend",
-      "giver": "Polyfon kunnskapsklynge (UiB, NMH, Ansgar)",
-      "belop": "40 000 kr (seks ukers arbeid)",
-      "beskrivelse": "Prosjekter innen musikkterapi og musikk & helse, også tverrfaglige (medisin, psykologi m.m.). Normalt ikke for avgangsstudenter.",
-      "frist": { "mnd": 3, "dag": 1 },
-      "fristTekst": "1. mars kl. 13",
-      "niva": ["bachelor", "master"], "fag": ["musikk", "medisin"], "sted": ["norge"], "type": ["laerested"],
-      "lenke": "https://www.uib.no/nb/polyfon/153114/s%C3%B8k-om-sommarstipend"
-    },
-    {
-      "id": "erasmus",
-      "navn": "Erasmus+ utvekslingsstipend",
-      "giver": "EU via ditt lærested",
-      "belop": "F.eks. €460/mnd til høykostland og UK (USN, høst 2026)",
-      "beskrivelse": "Tillegg ved utveksling i Europa og til avtalepartnere i UK. Søkes gjennom internasjonalt kontor på eget lærested; satser varierer.",
-      "frist": null,
-      "fristTekst": "Lærestedets frist",
-      "niva": ["bachelor", "master"], "fag": ["alle"], "sted": ["utveksling", "uk"], "type": ["offentlig", "laerested"],
-      "lenke": "https://www.usn.no/studier/utveksling-til-utlandet/stipendordninger/erasmus-internasjonal-dimensjon-storbritannia"
-    },
-    {
-      "id": "eggvin",
-      "navn": "Eli og Jens Eggvins fond",
-      "giver": "Eggvinfondet",
-      "belop": "25 000 kr (2025)",
-      "beskrivelse": "Havforskning, alle felt. Krever nær familietilknytning til Nord-Norge.",
-      "frist": { "mnd": 11, "dag": 28 },
-      "fristTekst": "Slutten av november",
-      "niva": ["master"], "fag": ["hav", "realfag"], "sted": ["norge"], "type": ["privat"],
-      "lenke": "https://ekstern.filer.uib.no/bio/Nyhetsbrev/2025_vedlegg/Utlysning_Eggvins_fond_2025.pdf"
-    },
-    {
-      "id": "jan-christensen",
-      "navn": "Jan Christensens legat (UNIS)",
-      "giver": "Universitetssenteret på Svalbard",
-      "belop": "Reise, opphold og utstyr",
-      "beskrivelse": "For norske master- og PhD-studenter med opptak ved UNIS.",
-      "frist": { "mnd": 3, "dag": 31 },
-      "fristTekst": "31. mars",
-      "niva": ["master"], "fag": ["realfag", "hav"], "sted": ["norge"], "type": ["laerested"],
-      "lenke": "https://www.unis.no/"
-    },
-    {
-      "id": "uib-stiftelser",
-      "navn": "Stiftelser ved UiB (bl.a. Meltzerfondet)",
-      "giver": "Universitetet i Bergen",
-      "belop": "Prosjekt- og reisestipend",
-      "beskrivelse": "Felles søknadsportal for UiB-stiftelsene; åpner i oktober. Mest for UiB-studenter, noen tar eksterne søkere.",
-      "frist": { "mnd": 12, "dag": 1 },
-      "fristTekst": "1. desember (de fleste)",
-      "niva": ["bachelor", "master"], "fag": ["alle"], "sted": ["norge"], "type": ["laerested"],
-      "lenke": "https://www4.uib.no/for-studenter/livet-som-student/fond-legater-og-stipend"
-    },
-    {
-      "id": "ntnu-fond",
-      "navn": "NTNUs fondsstyre – stipender og legater",
-      "giver": "NTNU",
-      "belop": "Varierer per fond",
-      "beskrivelse": "Alle fondene lyser ut 1. februar. For NTNU-studenter.",
-      "frist": { "mnd": 3, "dag": 1 },
-      "fristTekst": "1. mars",
-      "niva": ["bachelor", "master"], "fag": ["alle", "realfag"], "sted": ["norge", "utveksling"], "type": ["laerested"],
-      "lenke": "https://i.ntnu.no/wiki/-/wiki/English/Apply+for+funds+and+scholarships"
-    },
-    {
-      "id": "oslo-utdanningslegat",
-      "navn": "Utdanningslegat til økonomisk vanskeligstilte",
-      "giver": "Oslo kommune",
-      "belop": "Behovsprøvd",
-      "beskrivelse": "For ungdom og voksne i utdanning i Oslo (vgs, folkehøgskole, fagskole). Én tildeling per husstand per år.",
-      "frist": null,
-      "fristTekst": "Se kommunens side",
-      "niva": ["vgs", "fhs"], "fag": ["alle"], "sted": ["norge"], "type": ["behov", "offentlig"],
-      "lenke": "https://www.oslo.kommune.no/tilskudd-legater-og-stipend/utdanningslegat-til-okonomisk-vanskeligstilte/"
     }
   ],
   "andreKilder": [

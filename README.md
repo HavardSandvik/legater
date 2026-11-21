@@ -28,4 +28,6 @@ Legg til et objekt i `legater` i `legater.json`:
 
 Bruk `"frist": null` når datoen ikke er fast. Gyldige verdier for `niva`, `fag`, `sted` og `type` står under `kategorier` øverst i filen.
 
+Profilene under `profiler` i `legater.json` setter et ferdig filtervalg med ett klikk.
+
 Filtrene ligger i URL-en (f.eks. `#niva=master&sted=uk`), så et filtrert utvalg kan bokmerkes eller deles.
