@@ -89,6 +89,39 @@
       "lenke": "https://www.noram.no/master-og-phd-i-usa"
     },
     {
+      "id": "mohr",
+      "navn": "Augusta Antonette Mohrs stiftelse",
+      "giver": "Privat stiftelse, Bergen",
+      "belop": "Ikke oppgitt",
+      "beskrivelse": "Til utdanning for ungdom 17–24 år, særlig i kunstnerisk og vitenskapelig retning. Ingen nettside og ingen geografisk begrensning i registeret. Kontaktinfo hos Brønnøysund; samme forvalter som Nævdals legat.",
+      "frist": null,
+      "fristTekst": "Ingen fast frist – kontakt legatet",
+      "niva": ["fhs", "bachelor", "master"], "fag": ["realfag", "musikk", "medisin"], "sted": ["norge", "uk", "utland"], "type": ["privat"],
+      "lenke": "https://virksomhet.brreg.no/nb/oppslag/enheter/938559120"
+    },
+    {
+      "id": "gjesdal",
+      "navn": "Gjesdal og Ditmarsens legat",
+      "giver": "Privat legat, Bergen",
+      "belop": "Ikke oppgitt",
+      "beskrivelse": "Støtte til norsk eller utenlandsk universitets- eller høyskoleutdanning for unge menn eller kvinner. Ingen nettside; kontaktinfo hos Brønnøysund.",
+      "frist": null,
+      "fristTekst": "Ingen fast frist – kontakt legatet",
+      "niva": ["bachelor", "master"], "fag": ["alle"], "sted": ["norge", "uk", "utland"], "type": ["privat"],
+      "lenke": "https://virksomhet.brreg.no/nb/oppslag/enheter/938577463"
+    },
+    {
+      "id": "naevdal",
+      "navn": "Byggmester J.H. Nævdals legat",
+      "giver": "Privat legat, Bergen",
+      "belop": "Ikke oppgitt",
+      "beskrivelse": "Til utdanning av lærere, agronomer, ingeniører o.l. – realfag kan passe. Ingen nettside; samme forvalter som Mohrs stiftelse.",
+      "frist": null,
+      "fristTekst": "Ingen fast frist – kontakt legatet",
+      "niva": ["bachelor", "master"], "fag": ["realfag"], "sted": ["norge", "uk", "utland"], "type": ["privat"],
+      "lenke": "https://virksomhet.brreg.no/nb/oppslag/enheter/977157943"
+    },
+    {
       "id": "tono-unge",
       "navn": "TONO-stipend for unge talenter",
       "giver": "TONO",
